@@ -1,6 +1,5 @@
 # ============================================================
 #  Telecom Customer Churn — Exploratory Data Analysis
-#  Author: [Your Name]
 # ============================================================
 
 # ── CELL 1: Import Libraries ─────────────────────────────────
@@ -15,13 +14,7 @@ warnings.filterwarnings('ignore')
 print("Libraries loaded.")
 
 # ── CELL 2: Mount Google Drive & Load Data ───────────────────
-# If running on Google Colab, uncomment the next 3 lines:
-# from google.colab import drive
-# drive.mount('/content/drive')
-# DATA_PATH = '/content/drive/MyDrive/dataset/'
-
-# If running locally:
-DATA_PATH = './'   # <-- change to your folder path
+DATA_PATH = './'  
 
 client = pd.read_csv(DATA_PATH + 'Client.csv')
 record = pd.read_csv(DATA_PATH + 'Record.csv')
